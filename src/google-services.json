@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "82803959843",
+    "project_id": "speakapp-d4970",
+    "storage_bucket": "speakapp-d4970.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82803959843:android:4c3f124089183c986a6996",
+        "android_client_info": {
+          "package_name": "com.example.englishlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82803959843-2ntfm9vf630ire5ee4aijef2uahu9uc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.englishlearn",
+            "certificate_hash": "c793b9dab0bec12e2238c3e8bcc68de683efda83"
+          }
+        },
+        {
+          "client_id": "82803959843-gtl37f0ab8ljd9nmdekahc006no85p8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC72Z0FQlKHL40RDFOlv-D_BPAFpNRvZNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82803959843-gtl37f0ab8ljd9nmdekahc006no85p8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
