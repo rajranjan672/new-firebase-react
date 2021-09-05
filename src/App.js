@@ -1,4 +1,5 @@
 import { collection, getDocs } from "@firebase/firestore";
+
 import React, { useState, useEffect} from "react";
 import db from "./firebase";
 
@@ -17,7 +18,7 @@ function App() {
     <div>
       {users.map((user) => (
         <li key ={user.name}>{user.name}
-        -{user.phone}</li>
+        -{user.phone} - {user.email} - {user.gender} - "on call" - {user.onCall} - "isOnline" - {user.isOnline}</li>
       ))}
     </div>
     
