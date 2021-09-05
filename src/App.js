@@ -17,7 +17,7 @@ function App() {
     <div>
       {users.map((user) => (
         <li key ={user.name}>{user.name}
-        "-"{user.phone}</li>
+        -{user.phone}</li>
       ))}
     </div>
     
