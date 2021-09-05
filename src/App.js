@@ -1,28 +1,25 @@
+import { collection, getDocs } from "@firebase/firestore";
 import React, { useState, useEffect} from "react";
-import analytics from "./firebase";
-  
+import db from "./firebase";
+
 function App() {
   const [users, setusers] =useState([]);
 
   useEffect(() => {
-    const fetchuser = async() => {
-      const db = analytics.firestore()
-      const data = await db.collection("users").get()
-      setusers(data.docs.map(doc => doc.data()))
-    }
-    fetchuser()
-  }, [])
+    (async () => {
+        const userCollection = collection(db, "users");
+        const userSnapshot = await getDocs(userCollection);
+        setusers(userSnapshot.docs.map((doc) => doc.data()));
+    })();
+}, []);
 
   return(
-      <ul>
-      {users.map(user => (
+    <div>
+      {users.map((user) => (
         <li key ={user.name}>{user.name}</li>
       ))}
-      </ul>
+    </div>
     
   );
 }
-
 export default App;
-
-
