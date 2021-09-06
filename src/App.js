@@ -18,7 +18,7 @@ function App() {
     <div>
       {users.map((user) => (
         <li key ={user.name}>{user.name}
-         -{user.country} -{user.phone} - {user.email} - {user.gender} - - {user.minsleft}"min-left"- {user.onCall}"on call" - {user.isOnline}"isOnline"  </li>
+         -{user.country} -{user.phone} - {user.email} - {user.gender} - - {user.minsleft}"min-left"- {user.onCall}"on call"- {user.isOnline}"isOnline"  </li>
       ))}
     </div>
     
