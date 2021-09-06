@@ -18,7 +18,7 @@ function App() {
     <div>
       {users.map((user) => (
         <li key ={user.name}>{user.name}
-         -{user.country} -{user.phone} - {user.email} - {user.gender} - - {user.minsleft}"min-left"- "on call"={user.onCall ? "true": "false"}- "isOnline"={user.isOnline ? "true": "false"}  </li>
+         - {user.country} - {user.phone} - {user.email} - {user.gender} -  {user.minsleft}"min-left" - "on call" ={user.onCall ? "true": "false"} - "isOnline" ={user.isOnline ? "true": "false"}  </li>
       ))}
     </div>
     
