@@ -17,7 +17,7 @@ function App() {
   return(
     <div>
       {users.map((user) => (
-        <li key ={user.name}>{user.name}
+        <li key ={user.name}><span style={{fontWeight: 'bold'}}>{user.name}</span>
          = <span style={{color:'#F60BD5'}}>{user.country}</span> , <span style={{color:'blue'}}>{user.phone}</span> , <span style={{color:'red'}}>{user.email}</span> , <span style={{color:user.gender.Male? '#26CCCF': '#EE44F7'}}>{user.gender} </span> ,  {user.minsleft} "min-left" , "on call" =<span style={{color:user.onCall? 'green': 'red'}}>{user.onCall ? "true": "false"}</span> , "isOnline" =<span style={{color: user.isOnline? '#26CF29': '#F20D35'}}>{user.isOnline ? "true": "false"}</span>  </li>
       ))}
     </div>
