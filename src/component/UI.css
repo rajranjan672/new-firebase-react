@@ -1,5 +1,5 @@
-.name{
-    color:blue;
+.back{
+    background-color: black;
 }
 
 .email{
@@ -9,3 +9,8 @@
 .online{
     color: green;
 }
+
+.oncall{
+    color:green;
+}
+
