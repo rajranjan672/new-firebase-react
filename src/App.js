@@ -18,7 +18,7 @@ function App() {
   return(
     <Fragment>
     <div>
-      <h1 style={{textAlign:'center', color:''}}>Users Details</h1>
+      <h1 style={{textAlign:'center', color:'#28edbd'}}>Users Details</h1>
     </div>
     
     <div >
