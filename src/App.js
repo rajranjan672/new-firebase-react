@@ -1,8 +1,8 @@
 import { collection, getDocs } from "@firebase/firestore";
-
 import React, { useState, useEffect, Fragment} from "react";
 
 import db from "./firebase";
+import './App.css'; 
 
 function App() {
   const [users, setusers] =useState([]);
@@ -21,7 +21,7 @@ function App() {
       <h1 style={{textAlign:'center', color:'#28c9a2'}}>Users Details</h1>
     </div>
     
-    <div >
+    <div>
       <table border="1px" position='absolute'>
       <thead>
       <tr>
@@ -38,14 +38,14 @@ function App() {
       </thead>
       {users.map((user) => (
         <tr>
-        <td style={{color: '#1350d4', textAlign:"center"}}>{user.name}</td>
-        <td style={{textAlign: 'center'}}>{user.country}</td>
-        <td style={{textAlign: 'center'}}>{user.phone}</td>
-        <td style={{color: '#1350d4', textAlign:"center"}}>{user.email}</td>
-        <td style={{marginLeft:'100px', textAlign:"center"}}>{user.gender}</td>
-        <td style={{color:user.isOnline ?'#1ebd2e': '#e62412', fontWeight:'bold', textAlign:"center"}}>{user.isOnline ?"true": "false"}</td>
-        <td style={{color:user.onCall? '#1ebd2e' :'#e62412', fontWeight:'bold', textAlign:"center"}}>{user.onCall? "true": "false"}</td>
-        <td style={{textAlign: 'center'}}>{user.minsleft}</td>
+        <td className="box" style={{color: '#1350d4', textAlign:"center", cursor:'pointer'}} >{user.name}</td>
+        <td className="box" style={{textAlign: 'center', cursor:'pointer'}}>{user.country}</td>
+        <td className="box" style={{textAlign: 'center', cursor:'pointer'}}>{user.phone}</td>
+        <td className="box" style={{color: '#1350d4', textAlign:"center", cursor:'pointer'}}>{user.email}</td>
+        <td className="box" style={{marginLeft:'100px', textAlign:"center", cursor:'pointer'}}>{user.gender}</td>
+        <td className="box" style={{color:user.isOnline ?'#1ebd2e': '#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.isOnline ?"true": "false"}</td>
+        <td className="box" style={{color:user.onCall? '#1ebd2e' :'#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.onCall? "true": "false"}</td>
+        <td className="box" style={{textAlign: 'center', cursor:'pointer'}}>{user.minsleft}</td>
         </tr>
       ))}
       </table>

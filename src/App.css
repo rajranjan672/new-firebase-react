@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.box:hover{
+  transition: transform .2s;
+  transform: scale(1.3);
+}
