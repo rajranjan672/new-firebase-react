@@ -40,6 +40,26 @@
 
 .box:hover{
   transition: transform .2s;
- background: #F1E1C5;
+ background: #FCEC80;
   transform: scale(1.2);
+}
+.details{
+  position: relative;
+  overflow: hidden;
+}
+.details::before{
+    content: "";
+    height: 150%;
+    width: 40px;
+    background: rgba(255,255,255, .3);
+    position: absolute;
+    top: -20px;
+    transform: translateX(-80px) rotate(20deg);
+    transition: all 1.3s;
+    
+}
+
+.details:hover::before{
+  transform: translateX(230px) rotate(20deg);
+
 }
