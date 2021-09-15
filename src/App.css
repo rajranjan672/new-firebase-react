@@ -50,16 +50,50 @@
 .details::before{
     content: "";
     height: 150%;
-    width: 40px;
+    width: 0px;
     background: rgba(255,255,255, .3);
     position: absolute;
     top: -20px;
     transform: translateX(-80px) rotate(20deg);
-    transition: all 1.3s;
+    transition: all 2.8s;
     
 }
 
 .details:hover::before{
   transform: translateX(230px) rotate(20deg);
 
+}
+
+.body{
+  position: relative;
+  overflow: hidden;
+}
+
+.body::before{
+  content: "";
+  height: 150%;
+  width: 10px;
+  background: rgba(255,255,255, .3);
+  position: absolute;
+  top: 0px;
+  transform: translateX(-80px) rotate(20deg);
+  transition: all 2.8s;
+}
+
+.body:hover::before{
+  transform: translateX(230px) rotate(20deg);
+}
+
+.heading{
+  color: '#1350d4';
+}
+
+.heading:hover{
+  font-size: 0;
+}
+
+.heading:hover:after{
+  content: attr(data-hover);
+  font-size: 15px;
+  color: #f76d87;
 }
