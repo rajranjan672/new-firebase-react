@@ -29,7 +29,7 @@ function App() {
       <th style={{backgroundColor:'#dbe6cc', columnWidth:'180px'}}>Country</th>
       <th className="heading" data-hover="varified" style={{backgroundColor:'#dbe6cc', columnWidth:'180px', cursor:'pointer'}}>Mobile</th>
       <th className="heading" data-hover="varified" style={{color: '#1350d4',fontWeight:'bold',backgroundColor:'#dbe6cc', columnWidth:'300px', cursor:'pointer'}}>email</th>
-      <th style={{backgroundColor:'#dbe6cc',columnWidth:'145px'}}>Gender</th>
+      <th  style={{backgroundColor:'#dbe6cc',columnWidth:'145px'}}>Gender</th>
       <th style={{backgroundColor:'#dbe6cc',columnWidth:'120px'}}>isOnline</th>
       <th style={{backgroundColor:'#dbe6cc', columnWidth:'120px'}}>onCall</th>
       <th style={{backgroundColor:'#dbe6cc', columnWidth:'150px'}}>minsleft</th>
