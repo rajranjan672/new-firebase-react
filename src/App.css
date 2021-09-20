@@ -98,3 +98,18 @@
   color: #f76d87;
 }
 
+.heading1{
+  color: '#1350d4';
+}
+
+.heading1:hover{
+  font-size: 0;
+}
+
+.heading1:hover:after{
+  content: attr(data-hover);
+  font-size: 15px;
+  font-weight: bold;
+  color: #f76d87;
+}
+

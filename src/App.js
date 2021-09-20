@@ -32,7 +32,7 @@ function App() {
       <th  style={{backgroundColor:'#dbe6cc',columnWidth:'145px'}}>Gender</th>
       <th style={{backgroundColor:'#dbe6cc',columnWidth:'120px'}}>isOnline</th>
       <th style={{backgroundColor:'#dbe6cc', columnWidth:'120px'}}>onCall</th>
-      <th style={{backgroundColor:'#dbe6cc', columnWidth:'150px'}}>minsleft</th>
+      <th className="heading1" data-hover="current" style={{backgroundColor:'#dbe6cc', columnWidth:'150px'}}>minsleft</th>
       
 
       </tr>
@@ -40,12 +40,12 @@ function App() {
       {users.map((user) => (
         <tr>
         <td className="box body" style={{color: '#1350d4', textAlign:"center", cursor:'pointer'}} >{user.name}</td>
-        <td className="box body" style={{textAlign: 'center', cursor:'pointer'}}>{user.country}</td>
+        <td className="box body" style={{textAlign: 'center', cursor:'pointer'}}>{user.Country}</td>
         <td className="box body" style={{textAlign: 'center', cursor:'pointer'}}>{user.phone}</td>
         <td className="box body" style={{color: '#1350d4', textAlign:"center", cursor:'pointer'}}>{user.email}</td>
-        <td className="box body" style={{marginLeft:'100px', textAlign:"center", cursor:'pointer'}}>{user.gender}</td>
-        <td className="box body" style={{color:user.isOnline ?'#1ebd2e': '#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.isOnline ?"true": "false"}</td>
-        <td className="box body" style={{color:user.onCall? '#1ebd2e' :'#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.onCall? "true": "false"}</td>
+        <td className="box body" style={{marginLeft:'100px', textAlign:"center", cursor:'pointer'}}>{user.Gender}</td>
+        <td className="box body" style={{color:user.IsOnline ?'#1ebd2e': '#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.IsOnline ?"true": "false"}</td>
+        <td className="box body" style={{color:user.OnCall? '#1ebd2e' :'#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.OnCall? "true": "false"}</td>
         <td className="box body" style={{textAlign: 'center', cursor:'pointer'}}>{user.minsleft}</td>
         </tr>
       ))}
