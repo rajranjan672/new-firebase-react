@@ -32,7 +32,7 @@ function App() {
       <th  style={{backgroundColor:'#dbe6cc',columnWidth:'145px'}}>Gender</th>
       <th style={{backgroundColor:'#dbe6cc',columnWidth:'120px'}}>isOnline</th>
       <th style={{backgroundColor:'#dbe6cc', columnWidth:'120px'}}>onCall</th>
-      <th className="heading1" data-hover="current" style={{backgroundColor:'#dbe6cc', columnWidth:'150px'}}>minsleft</th>
+      <th className="heading1" data-hover="current" style={{backgroundColor:'#dbe6cc', columnWidth:'150px', cursor:'pointer'}}>minsleft</th>
       
 
       </tr>
