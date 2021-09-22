@@ -109,7 +109,6 @@
 .heading1:hover:after{
   content: attr(data-hover);
   font-size: 15px;
-  font-weight: bold;
   color: #f76d87;
 }
 

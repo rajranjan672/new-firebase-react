@@ -44,8 +44,8 @@ function App() {
         <td className="box body" style={{textAlign: 'center', cursor:'pointer'}}>{user.phone}</td>
         <td className="box body" style={{color: '#1350d4', textAlign:"center", cursor:'pointer'}}>{user.email}</td>
         <td className="box body" style={{marginLeft:'100px', textAlign:"center", cursor:'pointer'}}>{user.Gender}</td>
-        <td className="box body" style={{color:user.IsOnline ?'#1ebd2e': '#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.IsOnline ?"true": "false"}</td>
-        <td className="box body" style={{color:user.OnCall? '#1ebd2e' :'#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.OnCall? "true": "false"}</td>
+        <td className="box body" style={{color:user.isOnline ?'#1ebd2e': '#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.isOnline ?"true": "false"}</td>
+        <td className="box body" style={{color:user.onCall? '#1ebd2e' :'#e62412', fontWeight:'bold', textAlign:"center", cursor:'pointer'}}>{user.onCall? "true": "false"}</td>
         <td className="box body" style={{textAlign: 'center', cursor:'pointer'}}>{user.minsleft}</td>
         </tr>
       ))}
